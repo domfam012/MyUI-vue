@@ -27,9 +27,9 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    {src : '~/assets/css/bootstrap.css' , lang : 'css' },
-    {src : '~/assets/css/fontawesome.css' , lang : 'css' },
-    {src : '~/assets/css/fonts/fontawesome/solid.css' , lang : 'css' },
+    '~/assets/css/bootstrap.css',
+    '~/assets/css/fonts/fontawesome/solid.css',
+    '~/assets/css/fontawesome.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -45,7 +45,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    'bootstrap-vue/nuxt',
+
   ],
   /*
   ** Build configuration
