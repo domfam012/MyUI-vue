@@ -1,6 +1,10 @@
 
 module.exports = {
   mode: 'universal',
+  srcDir: 'client/',
+  server : {
+    port : 8000
+  },
   /*
   ** Headers of the page
   */
@@ -23,6 +27,9 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    {src : '~/assets/css/bootstrap.css' , lang : 'css' },
+    {src : '~/assets/css/fontawesome.css' , lang : 'css' },
+    {src : '~/assets/css/fonts/fontawesome/solid.css' , lang : 'css' },
   ],
   /*
   ** Plugins to load before mounting the App
@@ -38,7 +45,6 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
   ],
   /*
@@ -48,6 +54,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    extractCSS : true,
     extend (config, ctx) {
     }
   }
