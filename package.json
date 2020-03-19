@@ -1,7 +1,7 @@
 {
-  "name": "myui-vue",
-  "version": "1.0.0",
-  "description": "MyUI Vue start package (Vuex, NuxtJS, Express, Bootstrap included)",
+  "name": "myui-vuejs",
+  "version": "1.0.2",
+  "description": "한국형 뷰, 부트스트랩 템플릿",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
