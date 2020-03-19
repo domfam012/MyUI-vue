@@ -2,21 +2,21 @@
 module.exports = {
   mode: 'universal',
   srcDir: 'client/',
-  server : {
-    port : 8000
-  },
   /*
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '무료 템플릿을 만나보세요. 부트스트랩 / 뷰 / 리액트 - My UI',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { name: 'viewport', content: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'},
+      { 'http-equiv': 'X-UA-Compatible', content: 'ie=edge' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: '/js/bundle.js' }
     ]
   },
   /*
